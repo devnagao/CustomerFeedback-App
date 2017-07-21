@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)onVeryGood:(id)sender;
+- (IBAction)onGood:(id)sender;
+- (IBAction)onAverage:(id)sender;
+- (IBAction)onPoor:(id)sender;
+- (IBAction)onBad:(id)sender;
 
 @end
 
