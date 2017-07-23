@@ -18,15 +18,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [NSTimer scheduledTimerWithTimeInterval:3.0f repeats:NO block:^(NSTimer * _Nonnull timer) {
-        [self dismissViewControllerAnimated:NO completion:nil];
-    }];
-    
+    [self performSelector:@selector(back) withObject:nil afterDelay:3.0f];
+        
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)back
+{
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 @end

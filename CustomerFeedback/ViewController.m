@@ -81,7 +81,10 @@
             }
         } else {
             NSLog(@"Error");
-            
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+            [alertController addAction:okAction];
+            [self presentViewController:alertController animated:YES completion:nil];
         }
     }] resume];
     
